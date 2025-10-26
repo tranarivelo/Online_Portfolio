@@ -1,6 +1,6 @@
 section {
     background-color: black;
-    height: 100vh;
+    height: max-content;
     padding: 5%;
 }
 
