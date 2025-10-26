@@ -1,6 +1,6 @@
 @font-face {
     font-family: Monst;
-    src: url(fonts/Montserrat/Saira-VariableFont_wdth\,wght.ttf) format('truetype');
+    src: url(../fonts/Montserrat/Saira-VariableFont_wdth\,wght.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -385,7 +385,7 @@ figcaption {
 #art10 {
     background-size: 120%;
     background-position: BOTTOM;
-    background-image: url(images/projects_img/other/beam.png);
+    background-image: url(/images/projects_img/other/beam.png);
 }
 
 #section3 {
