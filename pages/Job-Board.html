@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Ranarivelo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/Project.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#section2">Projects</a></li>
+                <li><a href="/index.html#section3">Resume</a></li>
+                <li><a href="/pages/Form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="project_details_container">
+                <div id="project_head">
+                    <div>
+                        <h1>Job Board</h1>
+                        <p>Laravel 12 - HTML (Blade) JavaScript - PHP 8.2</p>
+                    </div>
+                    <p id="project_description">Welcome to Job Ton Père, the platform that puts people back at the heart
+                        of recruitment. <br>
+
+                        Here, there are no algorithms sorting through your résumés, no automatic filters, and no
+                        dehumanizing artificial intelligence. <br>
+                        Every application is received, read, and reviewed by real people — because behind every résumé
+                        lies a story, a journey, and a potential that no robot can truly understand.
+                        We believe that fair and effective recruitment starts with listening, transparency, and respect
+                        for every candidate.</p>
+                </div>
+                <div id="media">
+                    <div class="image-gallery">
+                        <img src="../images/projects_img/jobboard/2.png" alt="Image 1">
+                        <img src="../images/projects_img/jobboard/3.png" alt="Image 2">
+                        <img src="../images/projects_img/jobboard/4.png" alt="Image 2">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Tiavina Ranarivelo — Tous droits réservés</p>
+        <div id="footer-links">
+            <a href="#section1">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#resume">CV</a>
+            <a href="page/Form.html">Contact</a>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

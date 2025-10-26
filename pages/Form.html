@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Ranarivelo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/Form.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#section2">Projects</a></li>
+                <li><a href="/index.html#section3">Resume</a></li>
+                <li><a href="/pages/Form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="form_container">
+                <form>
+                    <div>
+                        <label for="lname">Name:</label><br>
+                        <input type="text" id="lname" name="lname" required><br>
+
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" required><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" required><br>
+
+                        <label for="age">Age :</label><br>
+                        <input type="number" id="age" name="age" min="3" max="99"><br>
+
+                        <label for="phone">Phone:</label><br>
+                        <input type="text" id="phone" name="phone" minlength="10" maxlength="10" pattern="\d{10}"
+                            placeholder="0606060606"><br>
+
+                        <label>Sex:</label><br>
+                        <input type="radio" id="male" name="Sex" value="Male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="Sex" value="female">
+                        <label for="female">Female</label><br>
+
+                        <label for="haircolor">Hair color:</label><br>
+                        <input type="color" id="haircolor" name="haircolor" value="#000000"><br>
+
+
+                    </div>
+
+                    <div>
+                        <label for="date">Date:</label><br>
+                        <input type="date" id="date" name="date" value="2025-09-23" required><br>
+
+                        <label for="technology">Technology:</label><br>
+                        <select id="technology" name="technology">
+                            <option value="">--Select a Technology--</option>
+                            <option value="php">¨PHP</option>
+                            <option value="sql">SQL</option>
+                        </select><br>
+
+                        <label for="question">Question:</label><br>
+                        <textarea id="question" name="question" required></textarea><br>
+
+                        <input type="submit" value="Submit">
+
+                    </div>
+
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Tiavina Ranarivelo — Tous droits réservés</p>
+        <div id="footer-links">
+            <a href="#section1">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#resume">CV</a>
+            <a href="page/Form.html">Contact</a>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

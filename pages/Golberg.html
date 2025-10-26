@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Ranarivelo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/Project.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#section2">Projects</a></li>
+                <li><a href="/index.html#section3">Resume</a></li>
+                <li><a href="/pages/Form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="project_details_container">
+                <div id="project_head">
+                    <div>
+                        <h1>Golberg Machine VR</h1>
+                        <p>Unity</p>
+                    </div>
+                    <p id="project_description">This virtual reality (VR) project recreates a Rube Goldberg machine — a
+                        complex device designed to perform a simple task in an exaggerated and chaotic way.
+                        Players can interact with various mechanisms such as ramps, gears, pulleys, and trigger objects
+                        to observe or design their own chain reactions.
+                        Thanks to VR, the experience offers an engaging and playful perspective, allowing users to
+                        manipulate elements in real time while exploring physics and engineering principles in a fun and
+                        interactive environment.</p>
+                </div>
+                <div id="media">
+                    <div class="image-gallery">
+                        <img src="../images/projects_img/other/golberf.png" alt="Image 1">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Tiavina Ranarivelo — Tous droits réservés</p>
+        <div id="footer-links">
+            <a href="#section1">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#resume">CV</a>
+            <a href="page/Form.html">Contact</a>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

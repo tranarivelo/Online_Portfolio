@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Ranarivelo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/Project.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#section2">Projects</a></li>
+                <li><a href="/index.html#section3">Resume</a></li>
+                <li><a href="/pages/Form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="project_details_container">
+                <div id="project_head">
+                    <div>
+                        <h1>Madagascar Scenery</h1>
+                        <p>X-Plane 11 - Ortho4Xp - WED</p>
+                    </div>
+                    <p id="project_description">It is clear that the Malagasy landscape is largely underrepresented in
+                        flight simulators — automatically generated airports often lack detail and authenticity.
+                        This inspired me to take the initiative to remodel all the airfields I have personally visited.
+                        Using community-developed tools, I’ve enhanced several airports and airstrips across Madagascar
+                        in X-Plane 11.</p>
+                </div>
+                <div id="media">
+                    <div class="image-gallery">
+                        <div id="airport">
+                            <img src="../images/projects_img/x/1.png" alt="Image 1">
+                            <p>FMMI - Ivato</p>
+                        </div>
+                        <div id="airport">
+                            <img src="../images/projects_img/x/2.jpg" alt="Image 2">
+                            <p>FMNM - Majunga</p>
+                        </div>
+                        <div id="airport">
+                            <img src="../images/projects_img/x/3.jpg" alt="Image 2">
+                            <p>FMAJ - Anjajavy</p>
+                        </div>
+                        <div id="airport">
+                            <img src="../images/projects_img/x/4.jpg" alt="Image 2">
+                            <p>FMAM - Ambila (fictional)</p>
+                        </div>
+                        <div id="airport">
+                            <img src="../images/projects_img/x/5.jpg" alt="Image 2">
+                            <p>FMME - Antsirabe</p>
+                        </div>
+                        <div id="airport">
+                            <img src="../images/projects_img/x/6.jpg" alt="Image 2">
+                            <p>FMFE - Moramanga</p>
+                        </div>
+                        <div id="airport">
+                            <img src="../images/projects_img/x/7.jpg" alt="Image 2">
+                            <p>FMNN - Fascene</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Tiavina Ranarivelo — Tous droits réservés</p>
+        <div id="footer-links">
+            <a href="#section1">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#resume">CV</a>
+            <a href="page/Form.html">Contact</a>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

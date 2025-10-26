@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Ranarivelo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/Project.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/index.html#section2">Projects</a></li>
+                <li><a href="/index.html#section3">Resume</a></li>
+                <li><a href="/pages/Form.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="project_details_container">
+                <div id="project_head">
+                    <div>
+                        <h1>Projet Artemis</h1>
+                        <p>Unreal Engine</p>
+                    </div>
+                    <p id="project_description">Personal project in duo on UE5. A single-player FPS divided into
+                        multiple levels, allowing the player to follow a linear narrative. <br>
+
+                        During this project, we will need to implement tools that enable the player to move and interact
+                        smoothly with their environment, through complex movement mechanics and a cover system.
+
+                        We will also include ballistic features for our weapons. We want all bullets to be physical
+                        projectiles that react dynamically with the environment and enemies:<br>
+
+                        -Ricochets<br>
+
+                        -Penetration<br>
+
+                        -Sway<br>
+
+                        The level design should allow the player to approach most situations as they wish, whether it’s
+                        charging in head-on, eliminating enemies stealthily, or even choosing not to interact with them
+                        at all.</p>
+                </div>
+                <div id="media">
+                    <div class="image-gallery">
+                        <img src="../images/projects_img/artemis/1.png" alt="Image 1">
+                        <img src="../images/projects_img/artemis/2.png" alt="Image 2">
+                        <img src="../images/projects_img/artemis/3.png" alt="Image 3">
+                    </div>
+                    <video width="70%" height="40%" controls>
+                        <source src="../images/projects_img/artemis/Artemis3.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la lecture de vidéos HTML5.
+                    </video>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Tiavina Ranarivelo — Tous droits réservés</p>
+        <div id="footer-links">
+            <a href="#section1">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#resume">CV</a>
+            <a href="page/Form.html">Contact</a>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

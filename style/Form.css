@@ -1,0 +1,31 @@
+#form_container {
+    padding: 5%;
+    background-color: #1614148b;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    justify-content: center;
+    background: black;
+    padding: 50px;
+}
+
+#question {
+    width: 30vw;
+    height: 10vh;
+}
+
+input,
+textarea,
+select {
+    color: #070707;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        flex-direction: column;
+
+    }
+}
