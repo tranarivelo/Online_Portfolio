@@ -24,7 +24,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background: url("/images/video.gif") no-repeat center center fixed;
+    background: url("images/video.gif") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -325,67 +325,67 @@ figcaption {
 #art0 {
     background-size: 140%;
     background-position: bottom;
-    background-image: url(/images/projects_img/jobboard/jb.png);
+    background-image: url(images/projects_img/jobboard/jb.png);
 }
 
 #art1 {
     background-size: 170%;
     background-position: left;
-    background-image: url(/images/projects_img/engine/custom.png);
+    background-image: url(images/projects_img/engine/custom.png);
 }
 
 #art2 {
     background-size: 210%;
     background-position: bottom;
-    background-image: url(/images/projects_img/Wefly/wefly.png);
+    background-image: url(images/projects_img/Wefly/wefly.png);
 }
 
 #art3 {
     background-size: 100%;
     background-position: center;
-    background-image: url(/images/projects_img/artemis/artemis.png);
+    background-image: url(images/projects_img/artemis/artemis.png);
 }
 
 #art4 {
     background-size: 130%;
     background-position: center;
-    background-image: url(/images/projects_img/internship/unnamed.png);
+    background-image: url(images/projects_img/internship/unnamed.png);
 }
 
 #art5 {
     background-size: 100%;
     background-position: center;
-    background-image: url(/images/projects_img/other/mikar.png);
+    background-image: url(images/projects_img/other/mikar.png);
 }
 
 #art6 {
     background-size: 100%;
     background-position: center;
-    background-image: url(/images/projects_img/other/tool.png);
+    background-image: url(images/projects_img/other/tool.png);
 }
 
 #art7 {
     background-size: 100%;
     background-position: center;
-    background-image: url(/images/projects_img/other/golberf.png);
+    background-image: url(images/projects_img/other/golberf.png);
 }
 
 #art8 {
     background-size: 160%;
     background-position: bottom;
-    background-image: url(/images/projects_img/other/lr.png);
+    background-image: url(images/projects_img/other/lr.png);
 }
 
 #art9 {
     background-size: 145%;
     background-position: bottom;
-    background-image: url(/images/projects_img/other/x.jpg);
+    background-image: url(images/projects_img/other/x.jpg);
 }
 
 #art10 {
     background-size: 120%;
     background-position: BOTTOM;
-    background-image: url(/images/projects_img/other/beam.png);
+    background-image: url(images/projects_img/other/beam.png);
 }
 
 #section3 {
