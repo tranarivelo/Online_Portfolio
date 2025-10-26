@@ -218,7 +218,7 @@ body {
     width: 7vh;
     align-items: center;
     justify-content: center;
-    background: url(/icons/scroll_down.svg) no-repeat;
+    background: url(../icons/scroll_down.svg) no-repeat;
     display: inline-block;
     animation: bounce 1s infinite;
 }
