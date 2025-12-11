@@ -1,6 +1,6 @@
 section {
     background-color: black;
-    height: fit-content;
+    height: max-content;
     padding: 5%;
 }
 
