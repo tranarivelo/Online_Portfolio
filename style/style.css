@@ -388,6 +388,12 @@ figcaption {
     background-image: url(../images/projects_img/other/beam.png);
 }
 
+#art11 {
+    background-size: 180%;
+    background-position: center;
+    background-image: url(../images/projects_img/java/5.png);
+}
+
 #section3 {
     display: flex;
     flex-direction: column;

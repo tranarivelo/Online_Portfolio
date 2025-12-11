@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiavina Ranarivelo</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/Project.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul id="links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#section2">Projects</a></li>
+                <li><a href="../index.html#section3">Resume</a></li>
+                <li><a href="Form.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="project_details_container">
+                <div id="project_head">
+                    <div>
+                        <h1>Legend Of Warcraft</h1>
+                        <p>Java 8 - LibGDX</p>
+                    </div>
+                    <p id="project_description">Legend of Warcraft is an immersive 2D RPG developed in Java using the
+                        LibGDX framework, seamlessly blending open-world exploration with strategic combat. Players
+                        navigate a vast map designed with Tiled, engaging in a mix of real-time skirmishes against
+                        monsters and tactical turn-based battles against bosses. The game features a robust progression
+                        system complete with leveling, experience tracking, and inventory management, challenging
+                        players to collect keys and complete quests to unlock these decisive boss encounters.</p>
+                </div>
+                <div id="media">
+                    <div class="image-gallery">
+                        <img src="../images/projects_img/java/1.png" alt="Image 1">
+                        <img src="../images/projects_img/java/2.png" alt="Image 1">
+                        <img src="../images/projects_img/java/3.png" alt="Image 1">
+                        <img src="../images/projects_img/java/4.png" alt="Image 1">
+                        <img src="../images/projects_img/java/5.png" alt="Image 1">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>© 2025 Tiavina Ranarivelo — Tous droits réservés</p>
+        <div id="footer-links">
+            <a href="#section1">Accueil</a>
+            <a href="#projects">Projets</a>
+            <a href="#resume">CV</a>
+            <a href="page/Form.html">Contact</a>
+        </div>
+    </footer>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
