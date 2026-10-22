@@ -1,0 +1,9 @@
+# Ancien portfolio, conservé en local uniquement
+old_portfolio/
+
+# Fichiers système / éditeur
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+.vscode/
+.idea/

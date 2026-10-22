@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projet — Tiavina Ranarivelo</title>
+  <meta name="description" content="Projet de Tiavina Ranarivelo, software engineer et game developer.">
+  <meta name="theme-color" content="#111110">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="data/site.js" defer></script>
+  <script src="data/i18n.js" defer></script>
+  <script src="data/projects.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/project.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Aller au contenu</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Tiavina Ranarivelo">
+        <span class="brand-full">Tiavina Ranarivelo</span>
+        <span class="brand-short" aria-hidden="true">T. R.</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="index.html#projets" data-i18n="nav.projects">Projets</a>
+        <a href="index.html#cv" data-i18n="nav.cv">CV</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-switch" type="button" data-i18n-attr="aria-label:nav.switch" aria-label="Switch to English">
+          <span data-lang="fr" class="is-active">FR</span><span class="lang-sep" aria-hidden="true">/</span><span data-lang="en">EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container project-page">
+    <a class="back link" href="index.html#projets">← <span data-i18n="project.back">Tous les projets</span></a>
+    <article id="project"></article>
+  </main>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-btn lightbox-close" type="button" data-action="close" data-i18n-attr="aria-label:project.close" aria-label="Fermer">×</button>
+    <button class="lightbox-btn lightbox-prev" type="button" data-action="prev" data-i18n-attr="aria-label:project.imgPrev" aria-label="Image précédente">‹</button>
+    <img alt="">
+    <button class="lightbox-btn lightbox-next" type="button" data-action="next" data-i18n-attr="aria-label:project.imgNext" aria-label="Image suivante">›</button>
+    <p class="lightbox-count"></p>
+  </dialog>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Tiavina Ranarivelo</p>
+      <a class="link" href="#top" data-i18n="footer.top">Retour en haut</a>
+    </div>
+  </footer>
+</body>
+</html>

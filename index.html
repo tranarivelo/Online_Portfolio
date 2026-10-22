@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="meta.title">Tiavina Ranarivelo — Software engineer &amp; game developer</title>
+  <meta name="description" data-i18n-attr="content:meta.description" content="Portfolio de Tiavina Ranarivelo, software engineer et game developer, en formation Data & IA à Epitech Paris.">
+  <meta name="theme-color" content="#111110">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tiavina Ranarivelo — Software engineer & game developer">
+  <meta property="og:description" content="Portfolio de Tiavina Ranarivelo, software engineer et game developer, en formation Data & IA à Epitech Paris.">
+  <meta property="og:image" content="assets/img/profil.webp">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script src="data/site.js" defer></script>
+  <script src="data/i18n.js" defer></script>
+  <script src="data/projects.js" defer></script>
+  <script src="data/cv.js" defer></script>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="nav.skip">Aller au contenu</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Tiavina Ranarivelo">
+        <span class="brand-full">Tiavina Ranarivelo</span>
+        <span class="brand-short" aria-hidden="true">T. R.</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#projets" data-i18n="nav.projects">Projets</a>
+        <a href="#cv" data-i18n="nav.cv">CV</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button class="lang-switch" type="button" data-i18n-attr="aria-label:nav.switch" aria-label="Switch to English">
+          <span data-lang="fr" class="is-active">FR</span><span class="lang-sep" aria-hidden="true">/</span><span data-lang="en">EN</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Accueil -->
+    <section class="hero container" id="top">
+      <div class="hero-text">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Paris · Epitech</p>
+        <h1 class="hero-name">Tiavina Ranarivelo</h1>
+        <p class="hero-role">Software engineer &amp; <em>game developer</em></p>
+        <p class="hero-intro" data-i18n="hero.intro">Je conçois des logiciels, des expériences XR et des jeux, avec le souci de construire des outils que les gens utilisent vraiment. Je suis actuellement une formation Data &amp; IA à Epitech Paris.</p>
+        <div class="hero-actions">
+          <a class="button" href="#projets" data-i18n="hero.ctaProjects">Voir les projets</a>
+          <a class="link" href="#contact" data-i18n="hero.ctaContact">Me contacter</a>
+        </div>
+      </div>
+      <figure class="hero-portrait">
+        <img src="assets/img/profil.webp" width="720" height="856" data-i18n-attr="alt:hero.portrait" alt="Portrait de Tiavina Ranarivelo" fetchpriority="high">
+      </figure>
+    </section>
+
+    <!-- Projets -->
+    <section class="section" id="projets" aria-labelledby="projets-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">01</span>
+          <h2 id="projets-title" data-i18n="projects.title">Projets</h2>
+          <p class="section-intro" data-i18n="projects.intro">Des outils d'analyse aux applications web, des moteurs de jeu aux simulateurs : une sélection de projets académiques et personnels.</p>
+        </header>
+        <div id="project-groups"></div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section class="section" id="cv" aria-labelledby="cv-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">02</span>
+          <h2 id="cv-title" data-i18n="cv.title">CV</h2>
+        </header>
+        <div class="cv">
+          <aside class="cv-aside">
+            <h3 class="cv-label" data-i18n="cv.profile">Profil</h3>
+            <p class="cv-profile" id="cv-profile"></p>
+            <a class="button" id="cv-download" href="#" download data-i18n="cv.download">Télécharger le CV (PDF)</a>
+          </aside>
+          <div class="cv-main">
+            <section class="cv-block" aria-labelledby="cv-exp-title">
+              <h3 class="cv-label" id="cv-exp-title" data-i18n="cv.experience">Expérience</h3>
+              <ol class="timeline" id="cv-experience"></ol>
+            </section>
+            <section class="cv-block" aria-labelledby="cv-edu-title">
+              <h3 class="cv-label" id="cv-edu-title" data-i18n="cv.education">Formation</h3>
+              <ol class="timeline" id="cv-education"></ol>
+            </section>
+            <section class="cv-block" aria-labelledby="cv-skills-title">
+              <h3 class="cv-label" id="cv-skills-title" data-i18n="cv.skills">Compétences</h3>
+              <dl class="skills" id="cv-skills"></dl>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <span class="section-index">03</span>
+          <h2 id="contact-title" data-i18n="contact.title">Contact</h2>
+        </header>
+        <div class="contact">
+          <div class="contact-aside">
+            <p class="contact-intro" data-i18n="contact.intro">Une question, un projet, une opportunité ? Laissez-moi un message, je réponds rapidement.</p>
+            <ul class="contact-links">
+              <li><a class="link" id="contact-email" href="#"></a></li>
+              <li><a class="link" id="contact-linkedin" href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a class="link" id="contact-github" href="#" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+          </div>
+
+          <form class="form" id="contact-form" novalidate>
+            <div class="field">
+              <label for="f-name" data-i18n="contact.name">Nom</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="f-email" data-i18n="contact.email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="f-message" data-i18n="contact.message">Message</label>
+              <textarea id="f-message" name="message" rows="6" required></textarea>
+            </div>
+            <!-- Champ piège anti-spam, invisible pour les humains -->
+            <input class="hp" type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="form-foot">
+              <button class="button" type="submit" data-i18n="contact.send">Envoyer</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span data-year>2026</span> Tiavina Ranarivelo</p>
+      <a class="link" href="#top" data-i18n="footer.top">Retour en haut</a>
+    </div>
+  </footer>
+</body>
+</html>
