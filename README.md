@@ -1,4 +1,4 @@
-# Online-Portfolio
+# Online_Portfolio
 
 Portfolio de Tiavina Ranarivelo : site statique en HTML, CSS et JavaScript, bilingue FR / EN, hébergé sur GitHub Pages.
 
@@ -37,7 +37,7 @@ python3 -m http.server 8000
 1. Pousser sur la branche `main`.
 2. Sur GitHub : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
 3. Le workflow `.github/workflows/deploy.yml` publie le site à chaque push sur
-   `https://tranarivelo.github.io/Online-Portfolio/`.
+   `https://tranarivelo.github.io/Online_Portfolio/`.
 
 ## Formulaire de contact
 
