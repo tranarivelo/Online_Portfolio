@@ -1,6 +1,6 @@
 /* ==========================================================================
-   Portfolio — Tiavina Ranarivelo
-   Sombre, sobre ; le seul détail est typographique (italique serif + soulignés).
+   Portfolio - Tiavina Ranarivelo
+   Sombre, sobre, angles droits ; une seule couleur vive (vert fluo) en touches discrètes.
    ========================================================================== */
 
 :root {
@@ -12,16 +12,16 @@
   --text: #ece9e4;
   --muted: #a39e95;
   --faint: #6e6a63;
-  --accent: #d4a25a;
+  --accent: #c6f03c;
 
-  --serif: "Instrument Serif", "Times New Roman", serif;
-  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
+  --display: "Oxanium", "Arial Narrow", sans-serif;
+  --sans: "Oxanium", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "Oxanium", ui-monospace, monospace;
 
   --container: 1120px;
   --gutter: clamp(16px, 4vw, 32px);
   --header-h: 64px;
-  --radius: 4px;
+  --radius: 0;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
   color-scheme: dark;
@@ -164,8 +164,8 @@ button {
 }
 
 .button:hover {
-  border-color: var(--text);
-  background: var(--text);
+  border-color: var(--accent);
+  background: var(--accent);
   color: var(--bg);
 }
 
@@ -200,8 +200,11 @@ button {
 }
 
 .brand {
-  font-family: var(--serif);
-  font-size: 1.375rem;
+  font-family: var(--display);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   line-height: 1;
   white-space: nowrap;
 }
@@ -236,7 +239,7 @@ button {
 }
 
 .lang-switch .is-active {
-  color: var(--text);
+  color: var(--accent);
 }
 
 .lang-switch:hover {
@@ -253,28 +256,41 @@ button {
   padding-block: clamp(56px, 10vw, 128px) clamp(64px, 10vw, 120px);
 }
 
+.hero .eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Petit carré fluo : rappel de la couleur d'accent. */
+.hero .eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: var(--accent);
+}
+
 .hero-name {
   margin-top: 20px;
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: var(--display);
+  font-weight: 600;
   font-size: clamp(3rem, 8vw, 6.25rem);
   line-height: 0.95;
-  letter-spacing: -0.015em;
+  letter-spacing: -0.02em;
 }
 
 .hero-role {
   margin-top: 20px;
+  font-family: var(--display);
   font-size: clamp(1.125rem, 2.2vw, 1.5rem);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--muted);
 }
 
-/* Le détail : un seul mot en italique serif, dans la couleur d'accent. */
 .hero-role em {
-  font-family: var(--serif);
-  font-size: 1.18em;
-  font-style: italic;
-  color: var(--accent);
+  font-style: normal;
+  color: var(--text);
+  box-shadow: inset 0 -0.12em 0 color-mix(in srgb, var(--accent) 55%, transparent);
 }
 
 .hero-intro {
@@ -327,14 +343,15 @@ button {
   padding-top: 0.9em;
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: var(--faint);
+  color: var(--accent);
 }
 
 .section-head h2 {
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: var(--display);
+  font-weight: 600;
   font-size: clamp(2.5rem, 5vw, 3.75rem);
   line-height: 1.05;
+  letter-spacing: -0.015em;
 }
 
 .section-intro {
@@ -421,9 +438,11 @@ button {
 }
 
 .card-placeholder span {
-  font-family: var(--serif);
-  font-style: italic;
-  font-size: 1.75rem;
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   line-height: 1.1;
 }
 
@@ -440,7 +459,8 @@ button {
 }
 
 .card-title {
-  font-size: 1.0625rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
   font-weight: 500;
 }
 
@@ -484,9 +504,8 @@ button {
 
 .cv-profile {
   margin-bottom: 32px;
-  font-family: var(--serif);
-  font-size: 1.375rem;
-  line-height: 1.45;
+  font-size: 1.125rem;
+  line-height: 1.6;
 }
 
 .cv-block + .cv-block {
@@ -509,7 +528,8 @@ button {
 }
 
 .timeline-title {
-  font-size: 1.0625rem;
+  font-family: var(--display);
+  font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.4;
 }
@@ -517,7 +537,8 @@ button {
 .timeline-meta {
   margin-top: 2px;
   font-size: 0.9375rem;
-  color: var(--accent);
+  color: var(--text);
+  opacity: 0.8;
 }
 
 .timeline-points {
@@ -532,7 +553,7 @@ button {
 }
 
 .timeline-points li::before {
-  content: "—";
+  content: "-";
   position: absolute;
   left: 0;
   color: var(--faint);
@@ -564,10 +585,11 @@ button {
 }
 
 .contact-intro {
-  max-width: 24em;
-  font-family: var(--serif);
+  max-width: 22em;
+  font-family: var(--display);
   font-size: 1.5rem;
-  line-height: 1.4;
+  font-weight: 500;
+  line-height: 1.35;
 }
 
 .contact-links {
@@ -684,8 +706,8 @@ button {
 
 .project-title {
   margin-top: 16px;
-  font-family: var(--serif);
-  font-weight: 400;
+  font-family: var(--display);
+  font-weight: 600;
   font-size: clamp(2.75rem, 7vw, 5rem);
   line-height: 1;
   letter-spacing: -0.01em;
@@ -848,7 +870,8 @@ div.project-hero {
 }
 
 .project-nav-title {
-  font-family: var(--serif);
+  font-family: var(--display);
+  font-weight: 600;
   font-size: clamp(1.5rem, 3vw, 2rem);
   line-height: 1.15;
   transition: color 0.2s;
@@ -860,7 +883,8 @@ div.project-hero {
 
 .project-missing {
   padding-block: 96px;
-  font-family: var(--serif);
+  font-family: var(--display);
+  font-weight: 600;
   font-size: 2rem;
 }
 
@@ -902,7 +926,7 @@ div.project-hero {
   width: 44px;
   height: 44px;
   border: 1px solid var(--line-strong);
-  border-radius: 50%;
+  border-radius: var(--radius);
   background: var(--bg);
   font-size: 1.5rem;
   line-height: 1;

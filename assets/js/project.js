@@ -25,7 +25,7 @@
     }
 
     const title = tr(project.title);
-    document.title = `${title} — Tiavina Ranarivelo`;
+    document.title = `${title} - Tiavina Ranarivelo`;
     document.querySelector('meta[name="description"]').setAttribute("content", tr(project.summary));
 
     const highlights = tr(project.highlights);
@@ -81,14 +81,14 @@
              <h2 class="cv-label">${escapeHtml(t("project.gallery"))}</h2>
              <ul class="gallery">${images
                .slice(1)
-               .map((src, i) => `<li><button type="button" data-index="${i + 1}"><img src="${src}" alt="${escapeHtml(title)} — ${i + 2}" loading="lazy" decoding="async"></button></li>`)
+               .map((src, i) => `<li><button type="button" data-index="${i + 1}"><img src="${src}" alt="${escapeHtml(title)} - ${i + 2}" loading="lazy" decoding="async"></button></li>`)
                .join("")}</ul>
            </section>`
         : ""}
 
       <nav class="project-nav" aria-label="Projets">
         <a href="project.html?id=${encodeURIComponent(prev.id)}">
-          <span class="eyebrow">← ${escapeHtml(t("project.prev"))}</span>
+          <span class="eyebrow"> ${escapeHtml(t("project.prev"))}</span>
           <span class="project-nav-title">${escapeHtml(tr(prev.title))}</span>
         </a>
         <a href="project.html?id=${encodeURIComponent(next.id)}" class="is-next">
@@ -106,7 +106,7 @@
   function show(i) {
     current = (i + images.length) % images.length;
     lightboxImg.src = images[current];
-    lightboxImg.alt = `${tr(project.title)} — ${current + 1}`;
+    lightboxImg.alt = `${tr(project.title)} - ${current + 1}`;
     lightboxCount.textContent = `${current + 1} / ${images.length}`;
     lightbox.classList.toggle("is-single", images.length < 2);
   }

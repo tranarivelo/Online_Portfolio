@@ -7,7 +7,7 @@ window.CV = {
 
   experience: [
     {
-      period: "2024 — 2026",
+      period: "2024 - 2026",
       title: { fr: "VR Engineer", en: "VR Engineer" },
       org: "5Discovery",
       place: "Paris",
@@ -37,8 +37,8 @@ window.CV = {
 
   education: [
     {
-      period: "2025 — 2028",
-      title: { fr: "Pré-MSc, préparation au Master of Science — Data & IA", en: "Pre-MSc, Master of Science preparation — Data & AI" },
+      period: "2025 - 2028",
+      title: { fr: "Pré-MSc, préparation au Master of Science - Data & IA", en: "Pre-MSc, Master of Science preparation - Data & AI" },
       org: "Epitech",
       place: "Paris",
       points: {
@@ -57,7 +57,7 @@ window.CV = {
       },
     },
     {
-      period: "2024 — 2025",
+      period: "2024 - 2025",
       title: { fr: "Mastère Européen Expert IT, Applications intelligentes et Big Data", en: "European Master's, IT Expert in Intelligent Applications and Big Data" },
       org: "Quest Education Group",
       place: "Paris",
@@ -77,7 +77,7 @@ window.CV = {
       },
     },
     {
-      period: "2021 — 2024",
+      period: "2021 - 2024",
       title: { fr: "Bachelor Développeur informatique, option jeu vidéo", en: "Bachelor in Software Development, video game track" },
       org: "Quest Education Group",
       place: "Paris",

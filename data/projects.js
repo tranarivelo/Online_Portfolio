@@ -14,7 +14,7 @@ window.PROJECTS = [
   {
     id: "citiz-annecy",
     category: "apps",
-    title: { fr: "Autopartage Citiz à Annecy", en: "Citiz car sharing in Annecy" },
+    title: { fr: "Hackathon - Citiz X Microsoft", en: "Hackathon - Citiz X Microsofts" },
     stack: ["Python", "Pandas", "GeoPandas", "scikit-learn", "Streamlit"],
     context: { fr: "Hackathon Epitech × Citiz × Microsoft", en: "Epitech × Citiz × Microsoft hackathon" },
     year: "2026",
@@ -97,7 +97,7 @@ window.PROJECTS = [
     title: { fr: "Diagnostic Mintzberg", en: "Mintzberg diagnostic" },
     stack: ["Power BI", "JavaScript", "SQL"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2026",
     summary: {
       fr: "Tableau de bord Power BI alimenté en temps réel par un sondage, pour analyser les flux de communication d'une entreprise.",
       en: "Power BI dashboard fed in real time by a survey, to analyse communication flows within a company.",
@@ -124,7 +124,7 @@ window.PROJECTS = [
     title: { fr: "Job Board", en: "Job Board" },
     stack: ["Laravel 12", "PHP 8.2", "Blade", "JavaScript"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2025",
     summary: {
       fr: "Plateforme de recrutement où chaque candidature est lue par une personne, sans filtre automatique.",
       en: "Recruitment platform where every application is read by a person, with no automatic filtering.",
@@ -140,8 +140,8 @@ window.PROJECTS = [
       ],
     },
     highlights: { fr: [], en: [] },
-    cover: "cover.webp",
-    images: ["01.webp", "02.webp", "03.webp", "04.webp"],
+    cover: "3.png",
+    images: ["2.png", "02.webp", "03.webp", "04.webp"],
     video: "",
     links: [],
   },
@@ -151,7 +151,7 @@ window.PROJECTS = [
     title: { fr: "Moteur 3D", en: "3D Engine" },
     stack: ["C++", "OpenGL"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2023",
     summary: {
       fr: "Moteur de rendu 3D écrit en C++ sur l'API graphique OpenGL.",
       en: "3D rendering engine written in C++ on top of the OpenGL graphics API.",
@@ -187,7 +187,7 @@ window.PROJECTS = [
     title: { fr: "Level Tool", en: "Level Tool" },
     stack: ["Unity", "C#"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2022",
     summary: {
       fr: "Suite d'outils pour Unity qui simplifie et accélère la conception de niveaux.",
       en: "Unity tool suite that simplifies and speeds up level design.",
@@ -208,7 +208,7 @@ window.PROJECTS = [
     title: { fr: "CV Editor", en: "CV Editor" },
     stack: ["HTML", "CSS", "JavaScript"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2026",
     summary: {
       fr: "Éditeur de CV simple qui garantit la compatibilité avec les logiciels de recrutement (ATS).",
       en: "Simple résumé editor that ensures compatibility with applicant tracking systems (ATS).",
@@ -231,7 +231,7 @@ window.PROJECTS = [
     title: { fr: "WeFly", en: "WeFly" },
     stack: ["Unreal Engine"],
     context: { fr: "Projet personnel", en: "Personal project" },
-    year: "",
+    year: "2024",
     summary: {
       fr: "Simulateur de vol bac à sable fondé sur une physique aérodynamique avancée.",
       en: "Sandbox flight simulator built on advanced aerodynamic physics.",
@@ -252,7 +252,7 @@ window.PROJECTS = [
     title: { fr: "Projet Artemis", en: "Project Artemis" },
     stack: ["Unreal Engine 5"],
     context: { fr: "Projet personnel en duo", en: "Personal project, duo" },
-    year: "",
+    year: "2023",
     summary: {
       fr: "FPS solo narratif sous Unreal Engine 5, avec balistique physique et level design ouvert.",
       en: "Narrative single-player FPS in Unreal Engine 5, with physical ballistics and open level design.",
@@ -282,7 +282,7 @@ window.PROJECTS = [
     title: { fr: "Goldberg Machine VR", en: "Goldberg Machine VR" },
     stack: ["Unity", "VR"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2022",
     summary: {
       fr: "Machine de Rube Goldberg en réalité virtuelle, à manipuler en temps réel.",
       en: "Rube Goldberg machine in virtual reality, manipulated in real time.",
@@ -324,7 +324,7 @@ window.PROJECTS = [
     title: { fr: "Internship Nightmare", en: "Internship Nightmare" },
     stack: ["Unity", "C#"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2022",
     summary: {
       fr: "Top-down shooter sous Unity, conçu pour maîtriser les IA à base d'arbres de comportement.",
       en: "Top-down shooter in Unity, built to master behaviour-tree AI.",
@@ -345,7 +345,7 @@ window.PROJECTS = [
     title: { fr: "League of Rocket", en: "League of Rocket" },
     stack: ["Unity", "C#"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2021",
     summary: {
       fr: "Exploration de la génération procédurale et de la physique de jeu sous Unity.",
       en: "Exploration of procedural generation and game physics in Unity.",
@@ -366,7 +366,7 @@ window.PROJECTS = [
     title: { fr: "Mikar RPG", en: "Mikar RPG" },
     stack: ["C++", "SFML"],
     context: { fr: "", en: "" }, // TODO
-    year: "",
+    year: "2021",
     summary: {
       fr: "RPG 2D en C++ pour prendre en main la bibliothèque SFML.",
       en: "2D RPG in C++ to get familiar with the SFML library.",
@@ -389,7 +389,7 @@ window.PROJECTS = [
     title: { fr: "Madagascar pour X-Plane 11", en: "Madagascar for X-Plane 11" },
     stack: ["X-Plane 11", "WED", "Ortho4XP"],
     context: { fr: "Projet personnel", en: "Personal project" },
-    year: "",
+    year: "2019",
     summary: {
       fr: "Remodélisation des aérodromes malgaches que j'ai visités, pour X-Plane 11.",
       en: "Remodelling of the Malagasy airfields I have visited, for X-Plane 11.",
@@ -399,8 +399,8 @@ window.PROJECTS = [
       en: ["Malagasy landscapes are barely represented in flight simulators, and automatically generated airports lack detail and authenticity. I remodelled the airfields I have visited, using community-built tools."],
     },
     highlights: {
-      fr: ["FMMI — Ivato", "FMNM — Majunga", "FMAJ — Anjajavy", "FMAM — Ambila (fictif)", "FMME — Antsirabe", "FMFE — Moramanga", "FMNN — Fascene"],
-      en: ["FMMI — Ivato", "FMNM — Majunga", "FMAJ — Anjajavy", "FMAM — Ambila (fictional)", "FMME — Antsirabe", "FMFE — Moramanga", "FMNN — Fascene"],
+      fr: ["FMMI - Ivato", "FMNM - Majunga", "FMAJ - Anjajavy", "FMAM - Ambila (fictif)", "FMME - Antsirabe", "FMFE - Moramanga", "FMNN - Fascene"],
+      en: ["FMMI - Ivato", "FMNM - Majunga", "FMAJ - Anjajavy", "FMAM - Ambila (fictional)", "FMME - Antsirabe", "FMFE - Moramanga", "FMNN - Fascene"],
     },
     cover: "cover.webp",
     images: ["01.webp", "02.webp", "03.webp", "04.webp", "05.webp", "06.webp", "07.webp"],
@@ -413,7 +413,7 @@ window.PROJECTS = [
     title: { fr: "Johnson Valley Raceway", en: "Johnson Valley Raceway" },
     stack: ["BeamNG.drive", "World Editor"],
     context: { fr: "Projet personnel", en: "Personal project" },
-    year: "",
+    year: "2022",
     summary: {
       fr: "Circuit fictif intégré à la carte Johnson Valley de BeamNG.drive.",
       en: "Fictional race track built into BeamNG.drive's Johnson Valley map.",

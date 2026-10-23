@@ -1,7 +1,7 @@
 // Textes de l'interface. Chaque clé correspond à un attribut data-i18n dans le HTML.
 window.I18N = {
   fr: {
-    "meta.title": "Tiavina Ranarivelo — Software engineer & game developer",
+    "meta.title": "Tiavina Ranarivelo - Software engineer & game developer",
     "meta.description": "Portfolio de Tiavina Ranarivelo, software engineer et game developer, en formation Data & IA à Epitech Paris.",
     "nav.skip": "Aller au contenu",
     "nav.projects": "Projets",
@@ -59,7 +59,7 @@ window.I18N = {
     "project.video": "Vidéo",
   },
   en: {
-    "meta.title": "Tiavina Ranarivelo — Software engineer & game developer",
+    "meta.title": "Tiavina Ranarivelo - Software engineer & game developer",
     "meta.description": "Portfolio of Tiavina Ranarivelo, software engineer and game developer, studying Data & AI at Epitech Paris.",
     "nav.skip": "Skip to content",
     "nav.projects": "Projects",
