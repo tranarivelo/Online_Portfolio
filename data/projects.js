@@ -127,7 +127,7 @@ window.PROJECTS = [
       ],
     },
     cover: "", // TODO: ajouter des captures dans assets/img/projects/time-manager/
-    images: [],
+    images: ["TM1.png"],
     video: "",
     links: [],
   },

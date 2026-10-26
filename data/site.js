@@ -7,6 +7,6 @@ window.SITE = {
   linkedin: "https://www.linkedin.com/in/TODO", // TODO: URL du profil LinkedIn
   cvPdf: "assets/cv/CV_Tiavina_Ranarivelo.pdf", // TODO: déposer le PDF à cet emplacement
 
-  // TODO: clé gratuite à créer sur https://web3forms.com (elle peut être publique)
-  web3formsKey: "YOUR_WEB3FORMS_ACCESS_KEY",
+  // Clé Web3Forms (publique par conception) : https://web3forms.com
+  web3formsKey: "365b3cbb-4626-4314-a69b-312655305adc",
 };
