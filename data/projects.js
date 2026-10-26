@@ -186,6 +186,46 @@ window.PROJECTS = [
     links: [],
   },
   {
+    id: "bookworm",
+    category: "apps",
+    title: { fr: "Bookworm - Moteur NLP pour Project Gutenberg", en: "Bookworm - NLP engine for Project Gutenberg" },
+    stack: ["Python", "NLTK", "scikit-learn", "Flask", "WeasyPrint", "Docker"],
+    context: { fr: "Projet Epitech, équipe de 2", en: "Epitech project, team of 2" },
+    year: "2026",
+    summary: {
+      fr: "Outil de traitement du langage naturel qui analyse un livre du Project Gutenberg et génère une fiche complète : résumé, thèmes, personnages, lieux et livres similaires.",
+      en: "Natural language processing tool that analyses a Project Gutenberg book and generates a full book card: summary, topics, characters, places and similar books.",
+    },
+    description: {
+      fr: [
+        "À partir du simple identifiant d'un livre, Bookworm télécharge le texte depuis Project Gutenberg, retire les mentions légales et les métadonnées, puis enchaîne plusieurs analyses NLP pour produire une fiche de lecture structurée avec sa couverture.",
+        "Chaque analyse repose sur une technique différente : résumé extractif par score TF-IDF des phrases, thèmes principaux par modélisation LDA, reconnaissance d'entités nommées avec NLTK pour extraire personnages et lieux, mesures de diversité lexicale (TTR, hapax, longueur moyenne des mots) et recherche des livres les plus proches par similarité cosinus TF-IDF.",
+        "L'outil s'utilise en ligne de commande ou via une interface web Flask, avec export de la fiche en PDF et affichage du JSON brut. Les résultats sont mis en cache pour ne jamais être recalculés, et l'ensemble tourne en local dans un conteneur Docker.",
+      ],
+      en: [
+        "From a single book ID, Bookworm downloads the text from Project Gutenberg, strips the legal notices and metadata, then chains several NLP analyses to produce a structured book card with its cover.",
+        "Each analysis uses a different technique: extractive summarisation by TF-IDF sentence scoring, main topics with LDA topic modelling, named entity recognition with NLTK to extract characters and places, lexical diversity metrics (TTR, hapax, mean word length) and nearest-book search with TF-IDF cosine similarity.",
+        "The tool runs from the command line or through a Flask web interface, with PDF export of the card and a raw JSON view. Results are cached so they are never recomputed, and everything runs locally in a Docker container.",
+      ],
+    },
+    highlights: {
+      fr: [
+        "Cinq techniques NLP réunies dans une même fiche : résumé, LDA, NER, diversité lexicale, similarité",
+        "Deux interfaces sur la même logique : CLI et application web Flask",
+        "Export PDF avec texte sélectionnable, cache JSON et déploiement Docker",
+      ],
+      en: [
+        "Five NLP techniques combined in a single card: summary, LDA, NER, lexical diversity, similarity",
+        "Two interfaces on the same logic: CLI and Flask web app",
+        "PDF export with selectable text, JSON cache and Docker deployment",
+      ],
+    },
+    cover: "cover.webp",
+    images: ["01.webp", "02.webp", "03.webp"],
+    video: "",
+    links: [],
+  },
+  {
     id: "moteur-3d",
     category: "apps",
     title: { fr: "Moteur 3D", en: "3D Engine" },
