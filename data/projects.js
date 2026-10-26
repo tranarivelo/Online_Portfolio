@@ -166,16 +166,16 @@ window.PROJECTS = [
     context: { fr: "", en: "" }, // TODO
     year: "2025",
     summary: {
-      fr: "Plateforme de recrutement où chaque candidature est lue par une personne, sans filtre automatique.",
-      en: "Recruitment platform where every application is read by a person, with no automatic filtering.",
+      fr: "Plateforme de recrutement développée pour apprendre le développement back-end.",
+      en: "Recruitment platform built to learn back-end development.",
     },
     description: {
       fr: [
-        "Un job board qui remet l'humain au cœur du recrutement : pas d'algorithme qui trie les CV, pas de filtre automatique. Chaque candidature est reçue, lue et étudiée par une vraie personne.",
+        "Un job board réalisé pour apprendre le développement back-end : modélisation de la base de données, routes, contrôleurs, authentification et gestion des offres et des candidatures.",
         "La plateforme est construite avec Laravel 12 et PHP 8.2, avec des vues Blade et du JavaScript côté client.",
       ],
       en: [
-        "A job board that puts people back at the heart of recruitment: no algorithm sorting résumés, no automatic filters. Every application is received, read and reviewed by a real person.",
+        "A job board built to learn back-end development: database modelling, routes, controllers, authentication and management of job offers and applications.",
         "The platform is built with Laravel 12 and PHP 8.2, with Blade views and client-side JavaScript.",
       ],
     },
