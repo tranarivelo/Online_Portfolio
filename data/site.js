@@ -8,5 +8,5 @@ window.SITE = {
   cvPdf: "assets/cv/CV_Tiavina_Ranarivelo.pdf", // TODO: déposer le PDF à cet emplacement
 
   // Clé Web3Forms (publique par conception) : https://web3forms.com
-  web3formsKey: "365b3cbb-4626-4314-a69b-312655305adc",
+  web3formsKey: "464f3e74-5b79-4c8c-a100-7fb868765a8c",
 };
