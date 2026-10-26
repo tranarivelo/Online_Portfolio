@@ -12,6 +12,46 @@
 window.PROJECTS = [
   // ── Outils & applications ────────────────────────────────────────────
   {
+    id: "joja",
+    category: "apps",
+    title: { fr: "JOJA - Analyse e-commerce & prédiction de réachat", en: "JOJA - E-commerce analysis & reorder prediction" },
+    stack: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "SciPy", "scikit-learn", "Jupyter"],
+    context: { fr: "Projet Epitech, équipe de 3", en: "Epitech project, team of 3" },
+    year: "2026",
+    summary: {
+      fr: "Analyse de 3,4 millions de commandes d'un site de courses en ligne, puis modèle de machine learning qui prédit les produits qu'un client va racheter.",
+      en: "Analysis of 3.4 million orders from an online grocery store, followed by a machine learning model that predicts which products a customer will buy again.",
+    },
+    description: {
+      fr: [
+        "À partir du jeu de données Instacart (3,4 millions de commandes, 206 209 clients, 32,4 millions de lignes de panier), l'objectif était de tirer des constats concrets pour le magasin, et pas seulement des statistiques. Chaque question suit le même déroulé : objectif, calcul, graphique, lecture des résultats, puis piste d'action.",
+        "L'analyse exploratoire couvre trois axes : la clientèle (taille des paniers, jours et heures de commande, rythme de réachat), l'assortiment (offre face à la demande, produits qui tournent peu, rayons achetés ensemble, mesurés par le lift) et les performances (meilleures ventes, part du bio, taux de réachat, concentration des ventes). Le typage des données a fait passer la table des paniers de 1 Go à 357 Mo, et le contrôle qualité a révélé que la dernière commande de chaque client avait un contenu masqué.",
+        "La partie machine learning prédit, pour chaque couple client × produit, si le produit sera repris à la prochaine commande. Elle s'appuie sur 12 variables construites sur l'historique, un découpage par client pour éviter les fuites de données, et une comparaison entre régression logistique, Random Forest et HistGradientBoosting dans des pipelines scikit-learn, avec un contrôle des performances par segment de clients.",
+      ],
+      en: [
+        "Starting from the Instacart dataset (3.4 million orders, 206,209 customers, 32.4 million basket rows), the goal was to draw concrete findings for the store, not just statistics. Each question follows the same flow: objective, computation, chart, interpretation, then a business action.",
+        "The exploratory analysis covers three areas: customers (basket size, order days and hours, reorder rhythm), assortment (supply versus demand, slow-moving products, aisles bought together, measured with lift) and performance (best sellers, share of organic products, reorder rate, sales concentration). Data typing shrank the basket table from 1 GB to 357 MB, and quality checks revealed that each customer's last order had its contents hidden.",
+        "The machine learning part predicts, for each customer × product pair, whether the product will be reordered in the next order. It relies on 12 features built from purchase history, a customer-level split to avoid data leakage, and a comparison of logistic regression, Random Forest and HistGradientBoosting in scikit-learn pipelines, with a performance check per customer segment.",
+      ],
+    },
+    highlights: {
+      fr: [
+        "9 % des produits génèrent 80 % des ventes ; le bio représente 10 % du catalogue mais 32 % des achats",
+        "Idées reçues testées : « chien + chat » confirmé (×5 vs hasard), « fromage + vin » non confirmé",
+        "Modèle de réachat HistGradientBoosting : ROC-AUC de 0,83 sur des clients jamais vus",
+      ],
+      en: [
+        "9% of products drive 80% of sales; organic is 10% of the catalogue but 32% of purchases",
+        "Common beliefs tested: \"dog + cat\" confirmed (×5 vs chance), \"cheese + wine\" not confirmed",
+        "HistGradientBoosting reorder model: 0.83 ROC-AUC on unseen customers",
+      ],
+    },
+    cover: "cover.webp",
+    images: ["01.webp", "02.webp", "03.webp", "04.webp"],
+    video: "",
+    links: [],
+  },
+  {
     id: "citiz-annecy",
     category: "apps",
     title: { fr: "Hackathon - Citiz X Microsoft", en: "Hackathon - Citiz X Microsofts" },
