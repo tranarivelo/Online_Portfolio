@@ -10,7 +10,7 @@ window.I18N = {
     "nav.switch": "Switch to English",
 
     "hero.eyebrow": "Paris · Epitech",
-    "hero.intro": "Je conçois des logiciels, des expériences XR et des jeux, avec le souci de construire des outils que les gens utilisent vraiment. Je suis actuellement une formation Data & IA à Epitech Paris.",
+    "hero.intro": "D'un moteur 3D en C++ à un modèle de machine learning, en passant par la VR, le web et la modélisation de territoires, j'aime explorer des domaines très différents et apprendre en construisant. Je suis actuellement en formation Data Science & IA à Epitech Paris.",
     "hero.ctaProjects": "Voir les projets",
     "hero.ctaContact": "Me contacter",
     "hero.portrait": "Portrait de Tiavina Ranarivelo",
@@ -68,7 +68,7 @@ window.I18N = {
     "nav.switch": "Passer en français",
 
     "hero.eyebrow": "Paris · Epitech",
-    "hero.intro": "I build software, XR experiences and games, with a focus on tools people actually use. I am currently studying Data & AI at Epitech Paris.",
+    "hero.intro": "From a C++ 3D engine to a machine learning model, through VR, web apps and terrain modding, I love exploring very different fields and learning by building. I am currently studying Data Science & AI at Epitech Paris.",
     "hero.ctaProjects": "See projects",
     "hero.ctaContact": "Get in touch",
     "hero.portrait": "Portrait of Tiavina Ranarivelo",
